@@ -36,9 +36,9 @@
               </p>
         </div>
         <img id="heart" onclick="changeHeart()" class="heart_icon" src="imgs/heart-regular.svg" alt="heart icon">
-        <img class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon">
+        <a class= "openComment" href="#"><img id="comment" class="comment_icon" src="imgs/comment-regular.svg" alt="comment icon"></a>
     </div>
-    <div class="comment_section">
+    <div id="dialog" class="comment_section">
       <input type="user_text" id="comment_box" placeholder="Enter comment">
       <button id="postBtn">Post</button>
       <ul id="unordered_list"></ul>
