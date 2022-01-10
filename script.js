@@ -11,7 +11,6 @@ function changeHeart() {
   }
 }
 var postBtn = document.getElementById("postBtn");
-// initializing var post to 'post' id in html file
 postBtn.addEventListener("click", function () {
   // using an event listener so that whenever I click...func is called
   var value = document.getElementById("comment_box").value;
@@ -25,10 +24,15 @@ postBtn.addEventListener("click", function () {
   document.getElementById("unordered_list").appendChild(li);
   // lastly...appending the list to an unordered list
 });
-
-(function() {
-    ("#dialog").dialog({ autoOpen: false});
-    ("openComment").click(function () {
-        ("#dialog").dialog('open');
-    });
-});
+function show() {
+    if (document.getElementById("dialog").style.display == "none") {
+    document.getElementById("dialog").style.display = "block";
+    }
+    return false;
+}
+function hide() {
+    if (document.getElementById("dialog").style.display == "block") {
+        document.getElementById("dialog").style.display = "none";
+    }
+    return false;
+}
