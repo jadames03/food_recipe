@@ -10,6 +10,26 @@ function changeHeart() {
     heartId.src = "imgs/heart-regular.svg";
   }
 }
+function changeComment() {
+  // func for comment icon
+  var commentId = document.getElementById("comment");
+  // initializing var commentId to 'comment' id in html file
+  if (commentId.src.match("imgs/comment-regular.svg")) {
+    // if src of comment img is regular then change to solid
+    commentId.src = "imgs/comment-solid.svg";
+  } else {
+    // change back to regular
+    commentId.src = "imgs/comment-regular.svg";
+  }
+}
+function show_n_hide() {
+  if (document.getElementById("dialog").style.display == "none") {
+    document.getElementById("dialog").style.display = "block";
+  } else {
+    document.getElementById("dialog").style.display = "none";
+  }
+  return false;
+}
 var postBtn = document.getElementById("postBtn");
 postBtn.addEventListener("click", function () {
   // using an event listener so that whenever I click...func is called
@@ -24,15 +44,3 @@ postBtn.addEventListener("click", function () {
   document.getElementById("unordered_list").appendChild(li);
   // lastly...appending the list to an unordered list
 });
-function show() {
-    if (document.getElementById("dialog").style.display == "none") {
-    document.getElementById("dialog").style.display = "block";
-    }
-    return false;
-}
-function hide() {
-    if (document.getElementById("dialog").style.display == "block") {
-        document.getElementById("dialog").style.display = "none";
-    }
-    return false;
-}

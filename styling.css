@@ -73,7 +73,9 @@ body{
 }
 .food_container p {
     text-align: left;
-    padding: 5px 50px;
+    margin-top: -10px;
+    padding: 0px 50px;
+    font-size: 11pt;
 }
 .heart_icon{
     width: 30px;
@@ -87,14 +89,26 @@ body{
     position: absolute;
     margin: 430px 900px;
 }
+
 #comment_box, #postBtn {
     border: none;
     border-radius: 5px;
-    font-size: 14pt;
+    font-size: 10pt;
+    margin-right: 2.5px;
+}
+#unordered_list {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    border-style: solid;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 .comment_section {
     /* border: 2px solid red; */
-    width: 50vw;
-    margin-left: 525px;
-    margin-top: 10px;
+    width: 195vw;
+    background-color: #242333;
 }
